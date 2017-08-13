@@ -1,0 +1,20 @@
+<table class="table">
+<tr>
+  <th>Juhe ID</th>
+  <th>Title</th>
+  <th>Ingredients</th>
+  <th>Steps</th>
+</tr>
+<% @menus.each do |menu| %>
+  <tr>
+    <td><%= menu.juhe_id %></td>
+    <td><%= menu.title %></td>
+    <td><%= menu.ingredients %></td>
+    <td>
+      <%= menu.steps %>
+    </td>
+
+  </tr>
+<% end %>
+</table>
+<%= image_tag menu.steps[0]
